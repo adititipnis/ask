@@ -8,48 +8,50 @@
     flex-wrap: wrap;
 }
 
-.center-content {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-}
+@media screen and (min-width: 480px) {
+    .center-content {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
 
-.hero-button {
-    display:flex;
-    border-style: solid;
-    border-width: 3px;
-    border-color: white;
-    color: rgb(40, 19, 8);
-    width: 30vw;
-    /*padding: 20px 100px 20px 100px;*/
-    letter-spacing: 5px;
-    margin: 5px;
-    cursor: pointer;
-    font-family: 'UrbanJungleDEMO';
-    font-size: 50px;
-    align-items:center;
-    justify-content:center;
-}
+    .hero-button {
+        display: flex;
+        border-style: solid;
+        border-width: 3px;
+        border-color: white;
+        color: rgb(40, 19, 8);
+        width: 30vw;
+        /*padding: 20px 100px 20px 100px;*/
+        letter-spacing: 5px;
+        margin: 5px;
+        cursor: pointer;
+        font-family: 'UrbanJungleDEMO';
+        font-size: 50px;
+        align-items: center;
+        justify-content: center;
+    }
 
-.button-back {
-    background-color: white;
-    opacity: 0.8;
-}
+    .button-back {
+        background-color: white;
+        opacity: 0.8;
+    }
 
-.hero-button:hover {
-    color: rgb(40, 19, 8);
-    width: 30vw;
-    /*padding: 20px 100px 20px 100px;*/
-    color: rgb(40, 19, 8);
-    letter-spacing: 5px;
-    margin: 5px;
-    cursor: pointer;
-}
+    .hero-button:hover {
+        color: rgb(40, 19, 8);
+        width: 30vw;
+        /*padding: 20px 100px 20px 100px;*/
+        color: rgb(40, 19, 8);
+        letter-spacing: 5px;
+        margin: 5px;
+        cursor: pointer;
+    }
 
-.button-back:hover {
-    background-color: white;
-    opacity: 1;
+    .button-back:hover {
+        background-color: white;
+        opacity: 1;
+    }
 }
 
 @font-face {
@@ -94,10 +96,7 @@
 
     .hero-button {
         display: flex;
-        /*border-style: solid;
-        border-width: 3px;
-        border-color: white;
-        color: rgb(40, 19, 8);*/
+        color: white;
         width: 30vw;
         letter-spacing: 5px;
         margin: 5px;
@@ -111,7 +110,7 @@
 
         .hero-button:hover {
             width: 30vw;
-            color: rgb(40, 19, 8);
+            color: white;
             letter-spacing: 5px;
             margin: 5px;
             cursor: pointer;
