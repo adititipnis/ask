@@ -1,6 +1,11 @@
+.content {
+    background-color: black;
+    padding: 0px 10px 10px 10px;
+}
+
 @media screen and (min-width: 480px) {
     .flex-hero {
-        background-image: url('images/35mm-analog-analogue-1002634.jpg');
+        
         background-size: cover;
         background-position: center;
         width: 100vw;
@@ -21,9 +26,8 @@
         border-style: solid;
         border-width: 3px;
         border-color: white;
-        color: rgb(40, 19, 8);
+        color: white;
         width: 30vw;
-        /*padding: 20px 100px 20px 100px;*/
         letter-spacing: 5px;
         margin: 5px;
         cursor: pointer;
@@ -34,15 +38,13 @@
     }
 
     .button-back {
-        background-color: white;
-        opacity: 0.8;
+        display: flex;
+        opacity: 0.9;
+        height: 50vh;
     }
 
-    .hero-button:hover {
-        color: rgb(40, 19, 8);
-        width: 30vw;
-        /*padding: 20px 100px 20px 100px;*/
-        color: rgb(40, 19, 8);
+    .hero-button:hover {        
+        width: 30vw;        
         letter-spacing: 5px;
         margin: 5px;
         cursor: pointer;
@@ -51,6 +53,18 @@
     .button-back:hover {
         background-color: white;
         opacity: 1;
+    }
+
+    .music {
+        background-image: url('images/music.jpeg');
+    }
+
+    .video {
+        background-image: url('images/video.jpeg');
+    }
+
+    .marketing {
+        background-image: url('images/marketing.jpeg');
     }
 }
 
