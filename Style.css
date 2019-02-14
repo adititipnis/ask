@@ -75,6 +75,7 @@
 
 @media screen and (max-width: 480px) {
     .center-content {
+        height: 100vh;
         width: 100vw;
         display: flex;
         justify-content: center;
@@ -83,21 +84,21 @@
     }
 
     .button-back {
-        background-color: white;
-        opacity: 0.8;
-        width: 80%;
-        margin: auto;
-        margin-top: 10%;
+        display: flex;
+        flex-grow: 1;
+        /*background-color: white;
+        opacity: 0.8;*/
+        width: 100%;
+        align-items: center;
     }
 
     .hero-button {
         display: flex;
-        border-style: solid;
+        /*border-style: solid;
         border-width: 3px;
         border-color: white;
-        color: rgb(40, 19, 8);
+        color: rgb(40, 19, 8);*/
         width: 30vw;
-        /*padding: 20px 100px 20px 100px;*/
         letter-spacing: 5px;
         margin: 5px;
         cursor: pointer;
@@ -109,13 +110,10 @@
     }
 
         .hero-button:hover {
-            color: rgb(40, 19, 8);
             width: 30vw;
-            /*padding: 20px 100px 20px 100px;*/
             color: rgb(40, 19, 8);
             letter-spacing: 5px;
             margin: 5px;
             cursor: pointer;
-            margin: auto;
         }
 }
