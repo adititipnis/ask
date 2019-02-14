@@ -108,11 +108,11 @@
         margin: auto;
     }
 
-        .hero-button:hover {
+        /*.hero-button:hover {
             width: 30vw;
             color: white;
             letter-spacing: 5px;
             margin: 5px;
             cursor: pointer;
-        }
+        }*/
 }
