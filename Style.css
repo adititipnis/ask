@@ -1,14 +1,14 @@
-.flex-hero {
-    background-image: url('images/35mm-analog-analogue-1002634.jpg');
-    background-size: cover;
-    background-position: center;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
-}
-
 @media screen and (min-width: 480px) {
+    .flex-hero {
+        background-image: url('images/35mm-analog-analogue-1002634.jpg');
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     .center-content {
         width: 100vw;
         display: flex;
@@ -76,6 +76,16 @@
 
 
 @media screen and (max-width: 480px) {
+    .flex-hero {
+        
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     .center-content {
         height: 100vh;
         width: 100vw;
@@ -88,10 +98,21 @@
     .button-back {
         display: flex;
         flex-grow: 1;
-        /*background-color: white;
-        opacity: 0.8;*/
+        
         width: 100%;
         align-items: center;
+    }
+
+    .music {
+        background-image: url('images/music.jpeg');
+    }
+
+    .video {
+        background-image: url('images/video.jpeg');
+    }
+
+    .marketing {
+        background-image: url('images/marketing.jpeg');
     }
 
     .hero-button {
