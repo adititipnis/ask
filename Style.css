@@ -4,7 +4,8 @@
     background-position: center;
     width: 100vw;
     height: 100vh;
-    display: flex
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .center-content {
@@ -32,7 +33,7 @@
 }
 
 .button-back {
-    background-color:white;
+    background-color: white;
     opacity: 0.8;
 }
 
@@ -69,4 +70,41 @@
     margin: 5px;
     padding: 5px;
     font-size: 50px
+}
+
+
+@media screen and (max-width: 480px) {
+    .center-content {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+    }
+
+    .button-back {
+        background-color: white;
+        opacity: 0.8;
+        width: 80%;
+        margin: auto;
+        margin-top: 10%;
+    }
+
+    .hero-button {
+        display: flex;
+        border-style: solid;
+        border-width: 3px;
+        border-color: white;
+        color: rgb(40, 19, 8);
+        width: 30vw;
+        /*padding: 20px 100px 20px 100px;*/
+        letter-spacing: 5px;
+        margin: 5px;
+        cursor: pointer;
+        font-family: 'UrbanJungleDEMO';
+        font-size: 50px;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
 }
