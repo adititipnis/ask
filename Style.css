@@ -1,0 +1,72 @@
+.flex-hero {
+    background-image: url('images/35mm-analog-analogue-1002634.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex
+}
+
+.center-content {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.hero-button {
+    display:flex;
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+    color: rgb(40, 19, 8);
+    width: 30vw;
+    /*padding: 20px 100px 20px 100px;*/
+    letter-spacing: 5px;
+    margin: 5px;
+    cursor: pointer;
+    font-family: 'UrbanJungleDEMO';
+    font-size: 50px;
+    align-items:center;
+    justify-content:center;
+}
+
+.button-back {
+    background-color:white;
+    opacity: 0.8;
+}
+
+.hero-button:hover {
+    color: rgb(40, 19, 8);
+    width: 30vw;
+    /*padding: 20px 100px 20px 100px;*/
+    color: rgb(40, 19, 8);
+    letter-spacing: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.button-back:hover {
+    background-color: white;
+    opacity: 1;
+}
+
+@font-face {
+    font-family: UrbanJungleDEMO;
+    src: url('fonts/UrbanJungleDEMO.otf');
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: mediumaquamarine;
+    height: 100%
+}
+
+.flex-item {
+    background-color: white;
+    margin: 5px;
+    padding: 5px;
+    font-size: 50px
+}
