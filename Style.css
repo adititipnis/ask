@@ -1,15 +1,48 @@
+.header {
+    display: flex;
+}
+
 .content {
     background-color: black;
     padding: 10px 10px 10px 10px;
 }
 
+.logo {
+    width: 12vw;
+}
+
+.div-nav {
+    justify-content: flex-end;
+    flex-grow: 100
+}
+
 @media screen and (min-width: 480px) {
+    .navigation-wide {
+        display: flex;
+        list-style-type: none;
+        background-color: black;
+        color: white;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .navigation-narrow {
+        display: none;
+    }
+
+    .nav-item {
+        margin: 10px;
+    }
+
+    .nav-end {
+        height: 40px;
+    }
+
     .flex-hero {
-        
         background-size: cover;
         background-position: center;
         width: 100vw;
-        height: 100vh;
+        height: 60vh;
         display: flex;
         flex-wrap: wrap;
     }
@@ -43,8 +76,8 @@
         height: 50vh;
     }
 
-    .hero-button:hover {        
-        width: 30vw;        
+    .hero-button:hover {
+        width: 30vw;
         letter-spacing: 5px;
         margin: 5px;
         cursor: pointer;
@@ -90,8 +123,51 @@
 
 
 @media screen and (max-width: 480px) {
+    .navigation-narrow {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .navigation-wide {
+        display: none;
+    }
+
+    .overlay {
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        background-color: rgb(0,0,0); /* Black fallback color */
+        background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+        overflow-x: hidden; /* Disable horizontal scroll */
+        transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    }
+
+        .overlay .closebtn {
+            margin-bottom:auto;
+            font-size: 60px;
+            color:white;
+            cursor:pointer;
+        }
+
+    .overlay-content {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        width: 100vw;
+        text-align: center;
+    }
+
+    .overlay-content li {
+        color: white;
+        align-content: space-around;
+        list-style:none;
+    }
+
     .flex-hero {
-        
         background-size: cover;
         background-position: center;
         width: 100vw;
@@ -111,10 +187,10 @@
 
     .button-back {
         display: flex;
-        flex-grow: 1;        
+        flex-grow: 1;
         width: 100%;
         align-items: center;
-        margin-bottom:5px
+        margin-bottom: 5px
     }
 
     .music {
@@ -143,7 +219,7 @@
         margin: auto;
     }
 
-        /*.hero-button:hover {
+    /*.hero-button:hover {
             width: 30vw;
             color: white;
             letter-spacing: 5px;
